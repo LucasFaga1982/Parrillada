@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<link rel="apple-touch-icon" sizes="180x180" href="icono-parrilla.jpg">
-    <link rel="icon" type="image/jpg" sizes="32x32" href="icono-parrilla.jpg">
-    <link rel="icon" type="image/jpg" sizes="16x16" href="icono-parrilla.jpg">
-    
-    <meta name="apple-mobile-web-app-title" content="Parrilla Tracker">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="theme-color" content="#d35400">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#d35400">
+<link rel="icon" type="image/jpeg" href="icono-parrilla.jpg">
     
 <head>
     <meta charset="UTF-8">
@@ -481,5 +476,14 @@
         });
     }
 </script>
+    
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js')
+      .then(() => console.log('App lista para instalarse'))
+      .catch((err) => console.log('Error SW:', err));
+  }
+</script>
+    
 </body>
 </html>

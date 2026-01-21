@@ -1,0 +1,21 @@
+{
+  "name": "Parrilla Tracker",
+  "short_name": "Parrilla",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#d35400",
+  "theme_color": "#d35400",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icono-parrilla.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "icono-parrilla.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    }
+  ]
+}
